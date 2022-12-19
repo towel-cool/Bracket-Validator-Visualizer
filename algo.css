@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&display=swap');
+
+* {
+    font-family: 'Jetbrains Mono';
+}
+
+#headers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title {
+    margin-bottom: 10px;
+}
+
+#name {
+    margin-top: 0;
+}
+
+#items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    margin-top: 7vw;
+
+}
+
+#return {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}

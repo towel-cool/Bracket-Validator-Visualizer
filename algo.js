@@ -29,7 +29,7 @@ async function validBrackets(sequence) {
                 let char = document.createElement("p");
                 char.setAttribute("id", "char" + j);
                 char.innerHTML = sequence[j];
-                char.style.backgroundColor = "gray";
+                char.style.backgroundColor = "orange";
                 input_div.appendChild(char);
             }
             else {
