@@ -109,5 +109,9 @@ if (isBrackets(sequence)) {
     validBrackets(sequence);
 }
 else { 
-    document.getElementById("action").innerHTML = "Invalid Input, please try again";
+    document.getElementById("items").remove();
+    let err = document.createElement("p");
+    err.style.backgroundColor = "lightgray";
+    err.innerHTML = "Invalid Input, Please Try Again";
+    document.getElementById("headers").appendChild(err);
 }

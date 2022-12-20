@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="help.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bracket Validator Visualizer</title>
+    </head>
+    <body>
+       <h1 class="header">How Does The Algorithm Work?</h1> 
+       <p>
+           This algorithm uses a stack to verify matching brackets. When an opening bracket is seen, it is added to the stack.
+           When a closing bracket is seen, the algorithm checks whether the top of the stack contains the matching opening
+           bracket. If the brackets match, then then the algorithm pops the opening bracket off of the stack. If the bracket does not match
+           then the algorithm returns false. if the algorithm reaches the end of the brackets without returning false, the length of the stack 
+           is checked. If the stack is empty, this means that every opening bracket had a matching closing bracket. If the stack is not empty, 
+           this means that there was an opening bracket with no matching closing bracket.
+       </p>
+       <h1 class="header">When is true returned?</h1>
+       <p>True is returned when each opening bracket has a matching closing bracket and vice versa</p>
+       <h1 class="header">When is false returned?</h1>
+       <p>There are two cases that return false: 
+            <br>
+            <br>Case 1: A closing bracket is reached and the top of the stack does not contain the matching opening bracket
+            <br>
+            <br>Case 2: An opening bracket does not have a matching closing bracket. In this case, the algorithm will reach the point
+            where the length of the stack is checked. Due to the opening bracket having no closing bracket, it will remain on the stack 
+            and the length of the stack will be greater than 0, resulting in the algorithm returning false.
+            <br>
+            <br>Note: brackets of different types are not considered matching brackets. For example, the pair of brackets '(]', although they are 
+            opening and closing, they are not considered matching because they are different types of brackets. 
+       </p>
+       <a href="index.html" id="return">Return to Main Page</a>
+    </body>
+</html>
