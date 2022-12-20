@@ -13,11 +13,13 @@
 }
 
 #title {
+    font-size: 7vh;
     margin-top: 30vh;
     margin-bottom: 10px;
 }
 
 #name {
+    font-size: 4vh;
     margin-top: 0;
 }
 
@@ -35,37 +37,38 @@
     border: 0;
     padding: 5px 5px;
     border-radius: 10px;
-    height: 30px;
-    width: 15vw;
+    font-size: 2.5vh;
+    height: 6vh;
+    width: 22vw;
 }
 
 #frm-text:hover {
     border: none;
-    width: 18vw;
+    width: 25vw;
     background-color: darkgray;
 }
 
 #frm-text:focus {
     border: none;
-    width: 22vw;
+    width: 28vw;
     background-color: darkgray;
 }
 
 #frm-btn {
     transition: 0.5s; 
     background-color: lightgray;
-    font-size: 15;
-    height: 30px;
-    width: 90px;
-    border-radius: 30px;
+    font-size: 2.5vh;
+    height: 7vh;
+    width: 8vw;
+    border-radius: 12px;
     border-width: 0;
     color: black;
 }
 
 #frm-btn:hover {
     background-color: darkgray;
-    height: 36px;
-    width: 96px;
+    font-size: 2.7vh;
+    width: 9vw;
     cursor: pointer;
 }
 
@@ -83,7 +86,7 @@
     margin-right: 48%;
     border-radius: 50px;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 4vh;
     color: black;
 }
 
