@@ -6,6 +6,7 @@ async function sleep(seconds) {
 }
 
 function isBrackets(sequence) {
+    /* This function checks that the sequence only contains brackets */
     let regex = /^[(){}\[\]]+$/
     if (sequence.match(regex)) {
         return true;
@@ -14,7 +15,7 @@ function isBrackets(sequence) {
 }
 
 async function validBrackets(sequence) {
-    /* This function checks that brackets are valid */
+    /* This function checks if brackets are valid */
     let stack = [];
     let input_div = document.getElementById("input");
 
@@ -24,6 +25,7 @@ async function validBrackets(sequence) {
         //Clear the input div
         document.getElementById("input").innerHTML = '<p>Input:</p>';
 
+        //This loop is for highlighting the current bracket
         for (let j = 0; j < sequence.length; j++) {
             if (i == j) {
                 let char = document.createElement("p");
@@ -40,6 +42,7 @@ async function validBrackets(sequence) {
             }
         }
         
+        //The algorithm begins here
         if (sequence[i] == '(' || sequence[i] == '{' || sequence[i] == '[') {
             stack.push(sequence[i]);
             document.getElementById("stack").innerHTML = "Stack: '" + stack + "'";
