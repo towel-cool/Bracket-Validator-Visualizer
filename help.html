@@ -22,15 +22,20 @@
        <h1 class="header">When is false returned?</h1>
        <p>There are two cases that return false: 
             <br>
-            <br>Case 1: A closing bracket is reached and the top of the stack does not contain the matching opening bracket
-            <br>
-            <br>Case 2: An opening bracket does not have a matching closing bracket. In this case, the algorithm will reach the point
-            where the length of the stack is checked. Due to the opening bracket having no closing bracket, it will remain on the stack 
-            and the length of the stack will be greater than 0, resulting in the algorithm returning false.
-            <br>
-            <br>Note: brackets of different types are not considered matching brackets. For example, the pair of brackets '(]', although they are 
-            opening and closing, they are not considered matching because they are different types of brackets. 
-       </p>
+            <ul>
+                <li>
+                    <p>Case 1: A closing bracket is reached and the top of the stack does not contain the matching opening bracket</p>
+                </li>
+                <li>
+                    <p>Case 2: An opening bracket does not have a matching closing bracket. In this case, the algorithm will reach the point
+                                where the length of the stack is checked. Due to the opening bracket having no closing bracket, it will remain on the stack 
+                                and the length of the stack will be greater than 0, resulting in the algorithm returning false.
+                    </p>
+                </li>
+            </ul>
+            <p>Note: brackets of different types are not considered matching brackets. For example, the pair of brackets '(]', although they are 
+                opening and closing, they are not considered matching because they are different types of brackets. 
+            </p>
        <a href="index.html" id="return">Return to Main Page</a>
     </body>
 </html>

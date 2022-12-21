@@ -112,6 +112,7 @@ else {
     document.getElementById("items").remove();
     let err = document.createElement("p");
     err.style.backgroundColor = "lightgray";
+    err.style.color = "black";
     err.innerHTML = "Invalid Input, Please Try Again";
     document.getElementById("headers").appendChild(err);
 }
