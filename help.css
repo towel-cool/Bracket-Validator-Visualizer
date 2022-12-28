@@ -6,11 +6,11 @@
 }
 
 h1 {
-    font-size: 1.9vw;
+    font-size: 4vh;
 }
 
 p {
-    font-size: 1vw;
+    font-size: 2.5vh;
 }
 
 #return {
@@ -23,7 +23,8 @@ p {
     margin-right: 38%;
     border-radius: 50px;
     text-decoration: none;
-    font-size: 1.7vw;
+    text-align: center;
+    font-size: 2.5vh;
     color: black;
 }
 

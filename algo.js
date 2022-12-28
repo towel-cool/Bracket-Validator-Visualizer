@@ -106,16 +106,28 @@ async function validBrackets(sequence) {
     return true;
 }
 
-let sequence = url_parameters.get("sequence");
-
-if (isBrackets(sequence)) {
-    validBrackets(sequence);
-}
-else { 
+function send_error(error_message) {
     document.getElementById("items").remove();
     let err = document.createElement("p");
     err.style.backgroundColor = "lightgray";
     err.style.color = "black";
-    err.innerHTML = "Invalid Input, Please Try Again";
+    err.innerHTML = "Invalid Input, " + error_message;
     document.getElementById("headers").appendChild(err);
 }
+
+function main() {
+    let sequence = url_parameters.get("sequence");
+
+    if (!isBrackets(sequence)) {
+        send_error("Please only enter brackets");
+        return null
+    } 
+    else if (sequence.length > 18) {
+        send_error("Too many characters entered");
+        return null
+    }
+
+    validBrackets(sequence);
+}
+
+main()
